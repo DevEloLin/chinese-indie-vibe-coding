@@ -1,5 +1,7 @@
 # 中文独立开发者 Vibe Coding 作品集
 
+**中国独立开发者 Vibe Coding 项目列表 · 分享大家都在做什么**
+
 > 你用 AI / Vibe Coding 做了个东西？发上来，让更多人看见。
 
 [![投稿](https://img.shields.io/badge/欢迎-投稿-brightgreen?style=for-the-badge)](../../issues/new?template=submit-project.yml)
