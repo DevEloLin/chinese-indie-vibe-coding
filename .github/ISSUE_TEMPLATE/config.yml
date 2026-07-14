@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 投稿指南
+    url: https://github.com/DevEloLin/chinese-indie-vibe-coding/blob/main/CONTRIBUTING.md
+    about: 想直接发 PR 投稿？先看这里的格式与规则。

@@ -1,0 +1,70 @@
+name: 投稿作品
+description: 把你用 Vibe Coding 做出来的独立产品加进清单
+title: "投稿: <产品名>"
+labels: ["投稿"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢投稿！填完下面几项即可，维护者会帮你整理进清单。
+        入选标准：能打开的产品 · 独立/个人开发者 · Vibe Coding 做的 · 面向中文圈。
+  - type: input
+    id: name
+    attributes:
+      label: 产品名
+      placeholder: 例如 KinMate
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 产品链接（能打开的网址 / 下载页 / 应用商店）
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: desc
+    attributes:
+      label: 一句话介绍
+      description: 写具体、有吸引力。别写「一个很好用的工具」这种。
+      placeholder: 本地优先的家庭健康档案库，AI 帮你读懂化验单，数据不出本机。
+    validations:
+      required: true
+  - type: input
+    id: tools
+    attributes:
+      label: 用了哪些 AI 编程工具（可选）
+      placeholder: Cursor / Claude Code / Codex / Copilot / Trae …
+  - type: input
+    id: repo
+    attributes:
+      label: 开源仓库链接（可选）
+      placeholder: https://github.com/...
+  - type: dropdown
+    id: status
+    attributes:
+      label: 当前状态
+      options:
+        - 在运营
+        - 开发中 / 公测
+        - 已关闭
+    validations:
+      required: true
+  - type: dropdown
+    id: is_author
+    attributes:
+      label: 你是这个产品的开发者本人吗？
+      options:
+        - 是，我本人做的
+        - 不是，我帮 TA 代投（已征得同意）
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 投稿自查
+      options:
+        - label: 是能打开、能用的产品（不是教程/资源合集/纯代码库）
+          required: true
+        - label: 独立/个人开发者作品，且开发过程大量借助 AI 编程（Vibe Coding）
+          required: true
