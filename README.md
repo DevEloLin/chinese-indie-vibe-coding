@@ -74,9 +74,9 @@
 
 **[EloLin](https://github.com/DevEloLin)**
 
-* :white_check_mark: [EloGames](https://games.elolin.com)：即开即玩的网页小游戏平台，主打自研《Lifeverse》多元宇宙人生模拟器
-* :white_check_mark: [KinMate](https://kinmate.elolin.com)：本地优先的家庭健康档案库，AI 帮你读懂化验单，数据不出本机
-* :white_check_mark: [TestHive](https://testhive.elolin.com)：众测市场，开发者发活动、测试者赚积分、报告可公开分享
+* :white_check_mark: [EloGames](https://games.elolin.com)：即开即玩的网页小游戏平台，打开就玩、无需下载或注册；主打自研《Lifeverse》——在不同平行宇宙里反复「重开人生」的模拟器，随机抽取天赋出身、经历迥异的人生，看你能活出怎样的一生
+* :white_check_mark: [KinMate](https://kinmate.elolin.com)：本地优先的家庭健康档案库，把全家人（含宠物）的化验单、病历、体检报告集中安全地存在设备上；AI 用大白话帮你读懂每项指标、是否正常，数据不出本机、不上传云端
+* :white_check_mark: [TestHive](https://testhive.elolin.com)：面向开发者的众测/内测市场，发布测试活动招募真实用户帮你试用挑 bug；测试者完成任务赚取平台积分奖励，测试报告可一键公开分享，让产品上线前拿到真实反馈
 
 <sub>👆 首批为示例（也是发起人的作品）。[👉 点此投稿](../../issues/new?template=submit-project.yml)，下一条时间线属于你。</sub>
 
