@@ -79,7 +79,7 @@
 
 ## 📚 精选收录 · 高星中文独立开发者项目 Top 100
 
-> 整理自 [chinese-independent-developer](https://github.com/1c7/chinese-independent-developer) 与 [1000-chinese-independent-developer-plus](https://github.com/XiaomingX/1000-chinese-independent-developer-plus)，取其中 GitHub 星标 ≥ 10 的开源项目，按 star 降序列出前 100（区间 2,124–96,748 ⭐）。
+> 精选中文独立开发者的高星开源项目，GitHub 星标 ≥ 10、按 star 降序列出前 100（区间 2,124–96,748 ⭐）。
 >
 > 这块是**泛独立项目**（不少是经典开发者工具，未必用 Vibe Coding 做），与上面的「作品清单」区分开，仅作发现与致敬。均以**普通链接**列出（非 @，不打扰作者）；点击即前往各项目仓库。如需调整或移除，欢迎提 Issue。
 
@@ -213,9 +213,6 @@ Vibe Coding（氛围编程）指主要通过向 AI 编程工具（Cursor、Claud
 **用哪些 AI 工具做的算 vibe coding？**
 Cursor、Claude Code、Codex、GitHub Copilot、Trae、Windsurf、v0、Bolt、Lovable 等 AI 辅助编程工具都算。
 
-**和「中国独立开发者项目列表」有什么区别？**
-[那份清单](https://github.com/1c7/chinese-independent-developer)收录所有中文独立产品；本清单**专注 Vibe Coding（AI 编程）这一波**做出来的作品。
-
 ---
 
 <a id="nav-en"></a>
@@ -239,7 +236,6 @@ Cursor、Claude Code、Codex、GitHub Copilot、Trae、Windsurf、v0、Bolt、Lo
 ## 🤝 参与与致谢
 
 - 投稿指南见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
-- 灵感来自 [chinese-independent-developer](https://github.com/1c7/chinese-independent-developer)——它收所有独立产品，本清单专注 **Vibe Coding** 这一波。
 - 内容以 [CC0](./LICENSE) 释出，欢迎自由取用与二次整理。
 
 ---
