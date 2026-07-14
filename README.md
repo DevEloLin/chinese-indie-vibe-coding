@@ -60,6 +60,22 @@ Vibe Coding（借助 AI 辅助编程——Cursor / Claude Code / Codex / Copilot
 
 ---
 
+## ⚙️ 维护与自动化（不使用 GitHub Actions）
+
+收稿处理由 AI 技能 [`.claude/skills/process-submissions`](./.claude/skills/process-submissions/SKILL.md) 自主完成：
+校验（链接存活 + 品类符合 + 归一化去重）→ 只增不删加进清单 → 感谢并关闭 Issue / 合并 PR。
+
+**本仓库刻意不跑 GitHub Actions**，技能通过以下方式运行：
+
+- **托管 Claude Routine 定时跑**（推荐，零 GitHub Actions）：在 Claude Code 里把本仓库 + 该技能配成一个定时 Routine（如每 6 小时），由 Anthropic 侧调度自动收稿。
+- **维护者本地按需跑**：`claude "处理投稿"` 即触发该技能。
+
+链接/格式/去重也可本地手动校验（纯标准库，无依赖）：
+
+```bash
+python scripts/validate_list.py
+```
+
 ## 🤝 参与与致谢
 
 - 投稿指南见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
