@@ -62,6 +62,15 @@ Vibe Coding（借助 AI 辅助编程——Cursor / Claude Code / Codex / Copilot
 
 ---
 
+## 📚 精选收录（整理自社区清单）
+
+除社区投稿的 Vibe Coding 作品外，我们还整理了一份**高星中文独立开发者项目**（取自
+[chinese-independent-developer](https://github.com/1c7/chinese-independent-developer) 与
+[1000-chinese-independent-developer-plus](https://github.com/XiaomingX/1000-chinese-independent-developer-plus)，
+GitHub 星标 ≥ 10、按 star 降序前 100），供发现与致敬——与上面的「作品清单」区分开。
+
+👉 **[查看：精选收录 · 高星中文独立开发者项目 →](./pages/featured.md)**
+
 ## ⚙️ 维护与自动化（不使用 GitHub Actions）
 
 收稿处理由 AI 技能 [`.claude/skills/process-submissions`](./.claude/skills/process-submissions/SKILL.md) 自主完成：
