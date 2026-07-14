@@ -1,0 +1,44 @@
+name: 自主处理投稿
+
+# AI 自主收稿：每 6 小时、或新投稿 Issue 打标签时、或手动触发，
+# 运行 .claude/skills/process-submissions 这个 skill——校验、去重、加进清单、感谢并关闭。
+#
+# ⚠️ 启用前需在仓库 Settings → Secrets 里配置两把密钥：
+#   - ANTHROPIC_API_KEY : Claude API key（跑 skill）
+#   - PAT_TOKEN         : 仓库所有者的 Personal Access Token（repo 权限）
+#                         —— 用它做 gh 认证，避免评论被打上无法去除的 "with Claude" 归属标记。
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  issues:
+    types: [labeled]
+  workflow_dispatch:
+
+# 仅当打的是「投稿」标签，或非 issue 事件时才跑
+jobs:
+  process:
+    if: ${{ github.event_name != 'issues' || github.event.label.name == '投稿' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 用所有者 PAT 认证 gh（避免 with Claude 归属标记）
+        run: echo "${{ secrets.PAT_TOKEN }}" | gh auth login --with-token
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+      - name: 安装 Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: 运行 process-submissions skill
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          claude -p "使用 process-submissions skill 处理本仓库的投稿（带「投稿」标签的 Issue 与开放的 PR）。严格遵守 skill 里的铁律：只增不删、只用 gh/git 命令行、发评论后去签名并验证。" \
+            --allowed-tools "Bash,Read,Edit,Write" \
+            --permission-mode acceptEdits
