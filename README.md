@@ -76,8 +76,34 @@ Vibe Coding（借助 AI 辅助编程——Cursor / Claude Code / Codex / Copilot
 python scripts/validate_list.py
 ```
 
+## ❓ 常见问题（FAQ）
+
+**Vibe Coding 是什么？**
+Vibe Coding（氛围编程）指主要通过向 AI 编程工具（Cursor、Claude Code、Codex、GitHub Copilot、Trae、Windsurf 等）描述需求，把想法直接做成能运行的软件，而不必手写全部代码。2025 年由 Andrej Karpathy 提出后迅速流行。
+
+**这个清单收录什么？**
+只收**中文独立开发者用 vibe coding 做出来、能打开能用的产品**——网站 / App / 小程序 / 桌面工具 / 浏览器插件。不收教程、课程、资源合集（awesome 类）、纯代码库或纯开发者工具。
+
+**怎么投稿 / 怎么提 PR？**
+两种方式：① 提 [Issue 填投稿表单](../../issues/new?template=submit-project.yml)；② 直接发 Pull Request。详见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+
+**用哪些 AI 工具做的算 vibe coding？**
+Cursor、Claude Code、Codex、GitHub Copilot、Trae、Windsurf、v0、Bolt、Lovable 等 AI 辅助编程工具都算。欢迎在投稿里注明用了哪个。
+
+**和「中国独立开发者项目列表」有什么区别？**
+[那份清单](https://github.com/1c7/chinese-independent-developer)收录所有中文独立产品；本清单**专注 Vibe Coding（AI 编程）这一波**做出来的作品，定位更聚焦。
+
+## In English
+
+**Chinese Indie Vibe Coding** is a community-curated showcase of real, usable products **vibe-coded by Chinese independent (indie) developers** — built with AI coding tools such as Cursor, Claude Code, Codex, and GitHub Copilot. It lists websites, apps, mini-programs, desktop tools and browser extensions (not tutorials, courses or dev tools). Anyone can submit their product via a GitHub Issue or Pull Request.
+
 ## 🤝 参与与致谢
 
 - 投稿指南见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
 - 灵感来自 [chinese-independent-developer](https://github.com/1c7/chinese-independent-developer)（中国独立开发者项目列表）——它收所有独立产品，本清单专注 **Vibe Coding** 这一波。
 - 内容以 [CC0](./LICENSE) 释出，欢迎自由取用与二次整理。
+
+---
+
+> **关键词 / Keywords**：Vibe Coding · 氛围编程 · AI 编程 · AI 辅助编程 · **面向中文** · **面向中国独立开发者** · 中文独立开发者 · 中国独立开发者 · 独立开发者作品集 · 独立产品 · indie developer · indie hacker · AI 做的产品 · Cursor · Claude Code · Codex · GitHub Copilot · Trae · Windsurf · 作品投稿 · vibe coding 作品/项目清单
+
