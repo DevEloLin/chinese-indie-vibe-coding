@@ -6,19 +6,62 @@
 
 点 [投稿表单](../../issues/new?template=submit-project.yml)，填几项就行（产品名、链接、一句话介绍、用了哪些 AI 工具、是否本人）。维护者会帮你整理进清单。适合不熟悉 Git 的同学。
 
-## 方式二：直接发 Pull Request
+## 方式二：发 Pull Request（提交教程）
 
-1. Fork 本仓库。
-2. 打开 `README.md`，找到「作品清单」。
-3. 如果**当月还没有小节**，新增一节，放到清单最上面：
+想自己动手、不等维护者整理，就发 PR。下面**两条路任选一条**——不会 Git 也没关系，走 🅰 全程在网页上点几下就行。
+
+### 🅰 网页直接编辑（不用装 Git · 最省事 · 推荐新手）
+
+1. 打开本仓库的 [`README.md`](./README.md)，点右上角的**铅笔图标 ✏️**（Edit this file）。
+2. 没权限？GitHub 会弹出提示，点绿色的 **Fork this repository**，它会**自动帮你建一份副本**再进入编辑器。
+3. 在编辑器里找到「🕒 作品清单 · 时间线」下的**当月小节**（如 `### 2026 年 7 月`）：
+   - **当月已有** → 在它下面、清单**最上面**加一段你自己的（最新在上）；
+   - **当月还没有** → 新建这一节，整节放到时间线**最上面**。
+
+   一段的样子（名字用**加粗**，作品用 `*` 列表，跟现有条目保持一致）：
    ```markdown
    ### 2026 年 7 月
 
-   #### [你的名字](https://github.com/你的用户名 或 你的主页)
-   * :white_check_mark: [产品名](https://链接)：一句话介绍。🛠 Cursor · [仓库](https://github.com/...)
+   **[你的名字](https://github.com/你的用户名)**
+
+   * :white_check_mark: [产品名](https://产品链接)：一句让人想点进去的具体介绍。🛠 Cursor · [仓库](https://github.com/...)
    ```
-   如果当月已有小节，直接在你自己的 `#### 名字` 下加条目即可。
-4. 提交 PR，标题写 `投稿: 产品名`。
+4. 拉到页面下方，填一句提交说明（如 `投稿: 产品名`），点 **Propose changes**（提交更改）。
+5. 下一页点 **Create pull request**（创建拉取请求），标题写 `投稿: 产品名`，确认提交。✅ 完成，等维护者校验合并即可。
+
+### 🅱 Fork + 本地 Git（熟悉命令行的人）
+
+```bash
+# 1. 在 GitHub 点 Fork，克隆你自己的副本（把「你的用户名」换成实际的）
+git clone https://github.com/你的用户名/chinese-indie-vibe-coding.git
+cd chinese-indie-vibe-coding
+
+# 2. 开一个分支
+git checkout -b submit/产品名
+
+# 3. 编辑 README.md：在「作品清单 · 时间线」当月小节最上面，
+#    按下面「条目格式」加上你的作品
+
+# 4. 提交并推送
+git add README.md
+git commit -m "投稿: 产品名"
+git push origin submit/产品名
+
+# 5. 回到 GitHub，点 Compare & pull request，标题写「投稿: 产品名」
+```
+
+### 条目格式
+
+放在你名字那段（`**[名字](主页)**`）下面，一行一个作品：
+
+```markdown
+* :white_check_mark: [产品名](https://链接)：一句具体介绍。🛠 用了哪些 AI 工具 · [仓库](https://github.com/...)
+```
+
+- 状态标记：`:white_check_mark:` 在运营 · `:clock8:` 开发中/公测 · `:x:` 已关闭
+- `🛠 工具` 与 `[仓库]` 是可选加分项，能写就写；开源附上仓库更容易被点开。
+
+> 一次 PR 尽量只加**你自己的**作品；帮别人代投请在 PR 里注明。
 
 ## 入选标准（提交前自查）
 

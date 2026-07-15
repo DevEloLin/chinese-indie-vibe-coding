@@ -52,13 +52,33 @@
 |  | 方式 | 说明 |
 |---|---|---|
 | 💬 | **提 Issue（推荐）** | [填投稿表单](../../issues/new?template=submit-project.yml)，写产品名 + 链接 + 一句话介绍，我们来整理 |
-| 🔀 | **发 PR** | 照下面格式，加到「作品清单」当月最上面。详见 [CONTRIBUTING](./CONTRIBUTING.md) |
+| 🔀 | **发 PR** | 照下面格式，加到「作品清单」当月最上面。手把手教程见 [投稿指南 · 方式二](./CONTRIBUTING.md#方式二发-pull-request提交教程) |
 
 条目格式：
 
 ```
 * :white_check_mark: [产品名](https://链接)：一句让人想点进去的介绍。🛠 Cursor · [仓库](链接)
 ```
+
+<details>
+<summary>👉 <b>不会 Git？在网页上发 PR 只要三步</b>（点开看图解步骤）</summary>
+
+<br/>
+
+全程在浏览器里点几下，不用装任何东西：
+
+1. 打开本仓库的 [`README.md`](./README.md)，点右上角**铅笔图标 ✏️**（Edit this file）。没权限时 GitHub 会提示，点 **Fork this repository** 自动建副本再编辑。
+2. 在「🕒 作品清单 · 时间线」当月小节（如 `### 2026 年 7 月`）**最上面**加一段你自己的（名字加粗、作品用 `*` 列表）：
+   ```markdown
+   **[你的名字](https://github.com/你的用户名)**
+
+   * :white_check_mark: [产品名](https://产品链接)：一句具体介绍。🛠 Cursor · [仓库](https://github.com/...)
+   ```
+3. 拉到底点 **Propose changes** → 下一页点 **Create pull request**，标题写 `投稿: 产品名`，完成 ✅
+
+完整两种方式（含本地 Git 命令）见 [投稿指南](./CONTRIBUTING.md)。
+
+</details>
 
 <br/>
 
